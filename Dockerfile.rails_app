@@ -1,7 +1,7 @@
 ##= rake assets:precompile
 ##= rake assets:clean
 
-FROM ruby2.2.2
+FROM ruby:2.2.2
 
 RUN echo 'gem: --no-rdoc --no-ri' >> "$HOME/.gemrc"
 
