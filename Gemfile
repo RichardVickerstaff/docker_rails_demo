@@ -14,6 +14,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'rake-n-bake'
 
 group :development, :test do
+  gem 'docker-construct'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
