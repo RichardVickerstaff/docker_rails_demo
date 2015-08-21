@@ -5,8 +5,9 @@ FROM ruby:2.2.2
 
 RUN echo 'gem: --no-rdoc --no-ri' >> "$HOME/.gemrc"
 
-RUN curl -sL https://rpm.nodesource.com/setup | bash -
-RUN yum install -y nodejs libcurl-devel
+RUN apt-get update -qq && apt-get install -y build-essential
+RUN apt-get install -y libxml2-dev libxslt1-dev
+RUN apt-get install -y nodejs
 
 # install things globally, for great justice
 ENV GEM_HOME /usr/local/bundle
