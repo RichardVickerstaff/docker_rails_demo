@@ -1,6 +1,6 @@
 Rake::Task["default"].clear if Rake::Task.task_defined?(:default)
 
-@external_dependencies = ['mongo', 'docker']
+@external_dependencies = ['mongo']
 @docker_repo = "10.0.0.100:5000"
 
 task default: %i[
