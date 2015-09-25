@@ -3,7 +3,7 @@ production:
     default:
       database: docker_rails_demo
       hosts:
-        - <%= ENV['SOME_MONGO_PORT_27017_TCP_ADDR'] || 'localhost' %>:<%= ENV['SOME_MONGO_PORT_27017_TCP_PORT'] || '27017' %>
+        - <%= ENV['MONGO_PORT_27017_TCP_ADDR'] || 'localhost' %>:<%= ENV['MONGO_PORT_27017_TCP_PORT'] || '27017' %>
 development:
   sessions:
     default:
