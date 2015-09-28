@@ -7,6 +7,7 @@ require 'database_cleaner'
 
 RSpec.configure do |config|
   config.include Mongoid::Matchers, type: :model
+  config.include FactoryGirl::Syntax::Methods
 
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.infer_spec_type_from_file_location!
