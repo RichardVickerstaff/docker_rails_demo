@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Docker Demo
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %nav.navbar.navbar-default
+      .container
+        %a.navbar-brand{href: "/"} Demo app
+
+    .container
+      -if flash[:error]
+        .alert.alert-danger{role: "alert"}
+          = flash[:error]
+      -if flash[:info]
+        .alert.alert-success{role: "alert"}
+          = flash[:info]
+      = yield

@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails'
 gem 'therubyracer', platforms: :ruby
 gem 'rake-n-bake'
+gem 'bootstrap-sass', '~> 3.3.5'
 
 group :development, :test do
   gem 'docker-construct'
