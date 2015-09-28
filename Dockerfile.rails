@@ -26,7 +26,7 @@ RUN bundle install --without development test
 
 COPY . /usr/src/app/
 
-ENV RAILS_ENV development
+ENV RAILS_ENV production
 EXPOSE 8080
 CMD ["./start_rails_pod.sh"]
 
